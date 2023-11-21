@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "*", // Allow requests from any origin
+    origin: "https://batpranila.vercel.app/", // Allow requests from any origin
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
   })
