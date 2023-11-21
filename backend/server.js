@@ -19,10 +19,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://armstrongisstring.onrender.com/","https://batpranila.vercel.app/"],
+    origin: "*", // Allow requests from any origin
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
