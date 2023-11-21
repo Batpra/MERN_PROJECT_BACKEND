@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://armstrongisstring.onrender.com/"],
+    origin: ["http://localhost:3000", "https://armstrongisstring.onrender.com/","https://batpranila.vercel.app/"],
     credentials: true,
   })
 );
